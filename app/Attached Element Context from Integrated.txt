@@ -1,0 +1,119 @@
+Attached Element Context from Integrated Browser
+
+Element: h3
+
+URL: http://localhost:3001/
+
+HTML Path: main.portfolio-shell > div#content > section#soccer.chapter-section.soccer-section > div.soccer-story.is-visible > div > h3
+
+Outer HTML:
+```html
+<h3>Competitive soccer was a huge part of my life when growing up. I loved to compete, work until I was exhausted with my teamates, and joke around at practice. There was something about those final 5 minutes of the biggest and closest games where you feel absolutely entrenched in every moment. Many of the most painful moments in my life came from the pitch, along with many of the most ecstatic. More than anything, soccer gave me character. It set a foundation of drive that pushes me towards the most hardworking fields of finance.</h3>
+```
+
+Dimensions:
+- top: 408px
+- left: 104px
+- width: 688px
+- height: 464px
+
+CSS:
+```css
+*, :before, :after, ::backdrop { --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #3b82f680;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ; }
+*, :before, :after { box-sizing: border-box;
+  border: 0 solid #e5e7eb; }
+* { box-sizing: border-box; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit;
+  font-weight: inherit; }
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre { margin: 0; }
+.soccer-story h3 { max-width: 43rem;
+  font: 400 clamp(1.25rem, 2vw, 2rem)/1.25 var(--serif);
+  margin: 1.5rem 0 0; }
+
+/* Pseudo-elements */
+:before, :after { --tw-content: ""; }
+::selection { background: var(--blue);
+  color: #fff; }
+
+/* Inherited */
+body { line-height: inherit }
+body { color: var(--ink); font-family: var(--sans) }
+html, :host { tab-size: 4; font-feature-settings: normal; font-family: Inter, Segoe UI, Arial, sans-serif; line-height: 1.5 }
+
+/* Resolved values */
+margin: 24px 0px 0px;
+border: 0px solid rgb(229, 231, 235);
+box-sizing: border-box;
+color: rgb(17, 16, 14);
+display: block;
+font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif;
+font-feature-settings: normal;
+font-size: 32px;
+font-weight: 400;
+height: 440px;
+line-height: 40px;
+margin-block-end: 0px /*UA*/;
+margin-block-start: 24px /*UA*/;
+margin-inline-end: 0px /*UA*/;
+margin-inline-start: 0px /*UA*/;
+max-width: 688px;
+tab-size: 4;
+unicode-bidi: isolate /*UA*/;
+width: 688px;
+
+/* CSS variables */
+--serif: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+--sans: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+--ink: #11100e;
+--blue: #3153e2;
+```

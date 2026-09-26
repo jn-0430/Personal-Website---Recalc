@@ -1,0 +1,111 @@
+<div id="market-callout-options" aria-label="Markets dashboard callout style options">
+  <style>
+    #market-callout-options {
+      color: light-dark(#11100e, #f1efe9);
+      font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    }
+    #market-callout-options * { box-sizing: border-box; }
+    #market-callout-options .options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    #market-callout-options .option {
+      min-width: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid light-dark(rgba(17,16,14,.2), rgba(241,239,233,.28));
+      color: inherit;
+      background: light-dark(#f1efe9, #161717);
+      text-align: left;
+    }
+    #market-callout-options .option[aria-pressed="true"] { outline: 2px solid light-dark(#3153e2, #8da3ff); outline-offset: 2px; }
+    #market-callout-options .option-name {
+      display: block;
+      padding: 12px 14px;
+      border-bottom: 1px solid light-dark(rgba(17,16,14,.16), rgba(241,239,233,.2));
+      color: light-dark(rgba(17,16,14,.58), rgba(241,239,233,.58));
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    #market-callout-options .preview { display: block; min-height: 298px; padding: 18px; }
+    #market-callout-options .eyebrow { display: block; margin: 0; font-size: 10px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
+    #market-callout-options .headline { display: block; margin: 12px 0 10px; font: 400 32px/1 "Iowan Old Style", Baskerville, "Times New Roman", serif; letter-spacing: -.04em; }
+    #market-callout-options .copy { display: block; margin: 0; color: light-dark(rgba(17,16,14,.65), rgba(241,239,233,.68)); font-size: 14px; line-height: 1.55; }
+    #market-callout-options .action { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; padding-bottom: 7px; border-bottom: 1px solid currentColor; font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+    #market-callout-options .arrow { font-size: 16px; line-height: 1; }
+    #market-callout-options .ticker-preview { color: #efede6; background: #090a0a; }
+    #market-callout-options .ticker-preview .eyebrow { color: #8da3ff; }
+    #market-callout-options .ticker-preview .copy { color: rgba(239,237,230,.68); }
+    #market-callout-options .ticker {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 20px -18px 0;
+      padding: 9px 18px;
+      overflow: hidden;
+      border-top: 1px solid rgba(239,237,230,.18);
+      border-bottom: 1px solid rgba(239,237,230,.18);
+      color: #8da3ff;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .09em;
+      white-space: nowrap;
+    }
+    #market-callout-options .ticker span { color: rgba(239,237,230,.62); }
+    #market-callout-options .ticker-preview .action { margin-top: 18px; }
+    #market-callout-options .ledger-preview { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 14px; border-left: 2px solid light-dark(#3153e2, #8da3ff); }
+    #market-callout-options .ledger-index { color: light-dark(#3153e2, #8da3ff); font-size: 11px; letter-spacing: .1em; }
+    #market-callout-options .ledger-preview .headline { font-size: 29px; }
+    #market-callout-options .ledger-preview .action { margin-top: 17px; color: light-dark(#3153e2, #8da3ff); }
+    #market-callout-options .selection { min-height: 20px; margin: 14px 0 0; color: light-dark(rgba(17,16,14,.65), rgba(241,239,233,.68)); font-size: 13px; }
+    @media (max-width: 640px) {
+      #market-callout-options .options { grid-template-columns: 1fr; }
+      #market-callout-options .preview { min-height: 0; }
+    }
+  </style>
+  <div class="options" role="group" aria-label="Choose a visual treatment">
+    <button class="option" type="button" aria-pressed="false" data-option="Editorial split">
+      <span class="option-name">01 / Editorial split</span>
+      <span class="preview">
+        <span class="eyebrow">Project</span>
+        <span class="headline">Markets<br>dashboard</span>
+        <span class="copy">I&apos;m currently spending all my tokens making a compact API-informed dashboard following equities, rates, FX, and other macro trends.</span>
+        <span class="action">Open dashboard <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+      </span>
+    </button>
+    <button class="option" type="button" aria-pressed="false" data-option="Market terminal">
+      <span class="option-name">02 / Market terminal</span>
+      <span class="preview ticker-preview">
+        <span class="eyebrow">Project / building now</span>
+        <span class="headline">Markets<br>dashboard</span>
+        <span class="ticker"><span>EQ  +0.8%</span><span>UST  4.21%</span><span>EUR/USD  1.08</span></span>
+        <span class="copy">A compact API-informed dashboard for the market signals I follow throughout recruiting.</span>
+        <span class="action">Open dashboard <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+      </span>
+    </button>
+    <button class="option" type="button" aria-pressed="false" data-option="Research ledger">
+      <span class="option-name">03 / Research ledger</span>
+      <span class="preview ledger-preview">
+        <span class="ledger-index">04</span>
+        <span>
+          <span class="eyebrow">Project</span>
+          <span class="headline">Markets dashboard</span>
+          <span class="copy">A personal research tool tracking equities, rates, FX, and broader macro trends through a small set of APIs.</span>
+          <span class="action">Open dashboard <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+        </span>
+      </span>
+    </button>
+  </div>
+  <p class="selection" aria-live="polite">Select an option to compare it.</p>
+  <script>
+    (() => {
+      const root = document.getElementById("market-callout-options");
+      const options = root.querySelectorAll(".option");
+      const selection = root.querySelector(".selection");
+      options.forEach((option) => option.addEventListener("click", () => {
+        options.forEach((item) => item.setAttribute("aria-pressed", "false"));
+        option.setAttribute("aria-pressed", "true");
+        selection.textContent = `${option.dataset.option} selected.`;
+      }));
+    })();
+  </script>
+</div>
