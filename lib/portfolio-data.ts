@@ -9,7 +9,7 @@ export type MediaPlaceholder = {
 };
 
 export type Track = {
-  year: string;
+  id: string; title: string; genre: string; year: string; note: string;
   artwork: string;
   artworkSrc?: string;
   src?: string;
