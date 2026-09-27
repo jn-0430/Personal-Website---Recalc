@@ -174,7 +174,7 @@ button.media-placeholder { cursor: zoom-in; }
 .topic-card { padding: 2rem; border: 1px solid rgba(255,255,255,.18); }
 .topic-card h3 { margin: 2.5rem 0 3rem; font: 400 clamp(2.3rem, 4vw, 4rem)/.95 var(--serif); }
 .music-story { margin: 0; color: rgba(255,255,255,.66); max-width: 100%; }
-.music-story p { margin: 0; font-size: clamp(1.36rem, 1.61vw, 1.72rem); line-height: 1.5; }
+.music-story p { margin: 0; font-size: clamp(1.2rem, 1.35vw, 1.45rem); line-height: 1.5; }
 .music-story p + p { margin-top: 1.2rem; }
 .studio-placeholder { grid-column: 1 / -1; min-height: 430px; }
 .project-video { width: 92%; height: auto; margin: 0; justify-self: end; align-self: start; display: grid; grid-template-rows: auto auto; overflow: hidden; border: 1px solid rgba(255,255,255,.18); background: #050505; }
