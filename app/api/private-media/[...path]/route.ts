@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { readFile } from "fs/promises";
 import path from "path";
+import { get } from "@vercel/blob";
 import { NextResponse } from "next/server";
 import { SESSION_COOKIE, verifySessionToken } from "@/lib/auth";
 
@@ -28,9 +29,36 @@ export async function GET(_: Request, { params }: { params: Promise<{ path: stri
   }
 
   const { path: pathSegments } = await params;
+
+  if (pathSegments.some((segment) => !segment || segment === "." || segment === "..")) {
+    return new NextResponse("Not found", { status: 404 });
+  }
+
+  const blobPathname = pathSegments.join("/");
+
+  if (process.env.BLOB_STORE_ID) {
+    try {
+      const result = await get(blobPathname, { access: "private" });
+      if (!result || result.statusCode !== 200) {
+        return new NextResponse("Not found", { status: 404 });
+      }
+
+      return new NextResponse(result.stream, {
+        headers: {
+          "Content-Type": result.blob.contentType,
+          "Cache-Control": "private, no-store",
+          "X-Content-Type-Options": "nosniff",
+          "X-Robots-Tag": "noindex, nofollow, noarchive",
+        },
+      });
+    } catch {
+      return new NextResponse("Not found", { status: 404 });
+    }
+  }
+
   const mediaRoot = path.resolve(process.cwd(), "private-media");
   const requestedPath = path.resolve(mediaRoot, ...pathSegments);
-  if (!requestedPath.startsWith(`${mediaRoot}${path.sep}`)) {
+  if (!requestedPath.startsWith(mediaRoot + path.sep)) {
     return new NextResponse("Not found", { status: 404 });
   }
 
