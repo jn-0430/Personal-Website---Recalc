@@ -113,7 +113,7 @@ export const portfolio = {
   },
   cooking: {
     storyTopics: [
-      "I have a lot of respect for my Dad's cooking. His medium-rare steak, in particular, is one of my favorite meals on Earth. And over the past year, I've started to come to terms with the fact that I won't be able to have it nearly as often. So last summer, I made sure to get a good teaching session going with him before I headed back to school. It's safe to say that that time has paid off (tremendously).",
+      "I have a lot of respect for my Dad's cooking. His medium-rare steak, in particular, is one of my favorite meals on Earth. And over the past year, I've started to come to terms with the fact that I won't be able to have it nearly as often. So last summer, I made sure to get a good teaching session going with him before I headed back to school. It's safe to say that that time has paid off.",
       "I've found that pursuing finance sometimes means sacrificing time spent with friends and family, but being able to throw a steak on the grill and cook with them has become a really important hobby for me. The steak plate was really fun to make; all my friends came over and we cooked up everything together. Next time we're making salmon.",
     ],
     process: {
